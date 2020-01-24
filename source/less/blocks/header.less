@@ -1,0 +1,78 @@
+.header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.header-intro {
+  padding: 20px;
+  box-sizing: border-box;
+  background: url("../img/header-bg-mobile.png") no-repeat center 140px;
+  background-size: 98%;
+  background-color: @color-blue;
+  color: white;
+}
+
+.header-intro__title {
+  height: 210px;
+}
+
+.header-intro__title h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+
+.header-intro__title p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.header-intro__main-title {
+  margin: 30px 0 20px 0;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.header-intro__ask p {
+  margin: 0;
+}
+
+.header-intro__ask p:nth-child(2) {
+  font-weight: bold;
+  color: @color-orange;
+}
+
+.header-intro__description {
+  font-weight: bold;
+}
+
+.header-intro__flash {
+  padding: 0 5px;
+  background-color: @color-orange;
+}
+
+.toggle {
+  display: block;
+  width: 100%;
+  margin: 40px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: @color-btn-green;
+  border: 2px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @color-orange;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
