@@ -1,0 +1,82 @@
+.schedule-wrapper {
+  background-color: @color-grey;
+}
+
+.schedule {
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.schedule ul {
+  .reset-list();
+}
+
+.schedule h2 {
+  margin: 0;
+  padding-top: 30px;
+  color: @color-orange;
+}
+
+.schedule__item {
+  position: relative;
+  width: 280px;
+  margin: 15px auto;
+  border: 1px solid @color-orange;
+}
+
+
+
+.schedule__day {
+  position: absolute;
+  top: 22px;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.schedule__floor {
+  font-size: 18px;
+  font-weight: bold;
+  color: @color-orange;
+}
+
+.schedule__content {
+  display: none;
+}
+
+.schedule__item input {
+  display: none;
+}
+
+.schedule__label::after {
+  content: "\002B";
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 32px;
+  font-weight: 700;
+  color: @color-orange;
+  transition: all 0.2s linear;
+}
+
+input:checked ~ .schedule__label::after {
+  transform: rotate(45deg);
+}
+
+input:checked ~ .schedule__content {
+  display: block;
+}
+
+.schedule__map p {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.3;
+  font-size: 14px;
+  color: grey;
+}
