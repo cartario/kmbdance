@@ -2,33 +2,46 @@
   background-color: @color-grey;
 }
 
-.schedule {
+.schedule,
+.adresses {
   width: 320px;
   margin: 0 auto;
   padding-bottom: 10px;
   text-align: center;
 }
 
-.schedule ul {
+.schedule ul,
+.adresses ul {
   .reset-list();
 }
 
-.schedule h2 {
+.schedule h2,
+.adresses h2 {
   margin: 0;
   padding-top: 30px;
   color: @color-orange;
 }
 
-.schedule__item {
+.adresses h2 {
+  padding-top: 10px;
+  color: @color-blue;
+}
+
+.schedule__item,
+.adresses__item {
   position: relative;
   width: 280px;
   margin: 15px auto;
   border: 1px solid @color-orange;
+  border-radius: 5px;
 }
 
+.adresses__item {
+  border: 1px solid @color-blue;
+}
 
-
-.schedule__day {
+.schedule__day,
+.adresses__metro {
   position: absolute;
   top: 22px;
   left: 10px;
@@ -37,21 +50,29 @@
   font-size: 12px;
 }
 
-.schedule__floor {
+.schedule__floor,
+.adresses__floor {
   font-size: 18px;
   font-weight: bold;
   color: @color-orange;
 }
 
-.schedule__content {
+.adresses__floor {
+  color: @color-blue;
+}
+
+.schedule__content,
+.adresses__content {
   display: none;
 }
 
-.schedule__item input {
+.schedule__item input,
+.adresses__item input {
   display: none;
 }
 
-.schedule__label::after {
+.schedule__label::after,
+.adresses__label::after {
   content: "\002B";
   position: absolute;
   top: 15px;
@@ -65,15 +86,22 @@
   transition: all 0.2s linear;
 }
 
-input:checked ~ .schedule__label::after {
+.adresses__label::after {
+  color: @color-blue;
+}
+
+input:checked ~ .schedule__label::after,
+input:checked ~ .adresses__label::after {
   transform: rotate(45deg);
 }
 
-input:checked ~ .schedule__content {
+input:checked ~ .schedule__content,
+input:checked ~ .adresses__content {
   display: block;
 }
 
-.schedule__map p {
+.schedule__map p ,
+.adresses__map p{
   width: 80%;
   margin: 0 auto;
   line-height: 1.3;

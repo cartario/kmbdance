@@ -1,0 +1,45 @@
+.tabs input {
+  display: none;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.tab-label:after {
+  content: "\002B";
+  width: 24px;
+  height: 24px;
+  font-size: 32px;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+
+.tab-content {
+  display: none;
+  max-height: 0;
+}
+
+input:checked + .tab-label {
+  color: #000;
+}
+
+input:checked + .tab-label:after {
+  transform: rotate(45deg);
+}
+
+input:checked ~ .tab-content {
+  display: block;
+  max-height: 1000px;
+  padding: 0 16px 16px;
+}
