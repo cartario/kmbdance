@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="css/kmbdance1.min.css">
   </head>
   <body>
+    <div style="display:none">
+      <include  src="build/img/sprite.svg"></include>
+    </div>
     <header class="header">
 
       <nav class="main-nav main-nav--closed">
@@ -55,7 +58,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">
+            <a href="#copyright" class="site-list__link">
               Контакты
             </a>
           </li>
@@ -205,7 +208,7 @@
                     <li class="schedule-person__item">14:00-свободно</li>
                   </ul>
                 </div>
-                <img src="img/location-2-mobile.jpg" alt="Зал№2">
+                <img src="img/location-2-img02-mobile.jpg" alt="Зал№2">
                 <div class="schedule__map schedule__map--1">
                   <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0558246c5ac986d352bcd164ec0082694d9128e25d07947f43598775edefcba&amp;source=constructor" width="280" height="200" frameborder="0"></iframe>
                   <p>м.Текстильщики, м.Кузьминки
@@ -306,11 +309,18 @@
           <p>Звони, пиши в WhatsAPP
           +7-926-491-53-49</p>
           <ul class="footer-nav__list">
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#about">О курсе</a>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#breadcrumbs">Тренерам - "Крошка хлеба"</a>
             </li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#processing">Процесс</a>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#test-task">Тестовое задание</a>
             </li>
             <li class="footer-nav__item"><a class="footer-nav__link" href="#schedule">Расписание</a>
+            </li>
+
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#processing">Процесс</a>
+            </li>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#about">О курсе</a>
+            </li>
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#price">Цены</a>
             </li>
             <li class="footer-nav__item"><a class="footer-nav__link" href="#faq">FAQ</a>
             </li>
@@ -318,25 +328,33 @@
         </div>
           <div class="copyright-wrapper">
             <div class="copyright">
-              <h3>Задизайнил и закодил:</h3>
+
+              <h3>Задизайнил и сверстал:</h3>
               <ul class="social">
                 <li class="social__item">
-                  <a class="social__link" href="#">
-                    vk
+                  <a class="social__link" href="https://vk.com/vasiliyizrossii">
+                    <svg class="social__img social__img--vk">
+                     <use xlink:href="#logo-vk"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="#">
-                    fb
+                  <a class="social__link" href="https://www.facebook.com/vasili.zaykov">
+                    <svg class="social__img social__img--fb">
+                     <use xlink:href="#logo-fb"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="#">
-                    inst
+                  <a class="social__link" href="https://www.instagram.com/vasiliyizrossii/">
+                    <svg class="social__img social__img--instagram">
+                     <use xlink:href="#logo-instagram"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
               <div class="copyright__contacts">
+                <a name="copyright"></a>
                 <p>+7-926-491-53-49</p>
                 <p>cartario@yandex.ru</p>
               </div>

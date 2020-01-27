@@ -2,17 +2,31 @@
   .reset-list();
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 55%;
   margin: 20px auto;
 }
 
 .social__item {
   width: 40px;
   height: 40px;
-  background-color: @color-orange;
   border-radius: 50%;
 }
 
 .social__link {
-  color: #fff;
+  width: inherit;
+  height: inherit;
+}
+
+.social__img {
+  width: inherit;
+  height: inherit;
+  fill: #fff;
+
+  &:hover {
+    fill: @color-orange;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
