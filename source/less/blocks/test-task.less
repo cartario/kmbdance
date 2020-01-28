@@ -36,10 +36,15 @@
   background-color: @color-grey;
 }
 
+.test-task-page__wrapper {
+  border: 1px solid @color-blue;
+}
+
 .test-task-page {
   width: 320px;
-  height: 550px;
   margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -48,11 +53,39 @@
   padding: 20px;
 }
 
+.test-task-page p {
+  margin: 0;
+  padding: 15px;
+  font-size: 16px;
+}
+
 .test-task-page__list {
-  width: 250px;
+  width: 280px;
   margin: 10px auto;
-  padding: 20px;
+  padding: 5px;
   box-sizing: border-box;
   text-align: left;
-  outline: 1px solid red;
+
 }
+
+.test-task-page__item,
+.test-task-page__luck {
+  .reset-list();
+  position: relative;
+  margin: 15px;
+  padding-left: 10px;
+  line-height: 1.2;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.test-task-page__item::before {
+  position: absolute;
+  content: "";
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  background-color: @color-orange;
+  border-radius: 50%;
+}
+
